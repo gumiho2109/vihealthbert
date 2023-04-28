@@ -13,7 +13,7 @@ MODEL_CLASSES = {
 }
 
 MODEL_PATH_MAP = {
-    "phobert" : "vinai/phobert-base",
+    "phobert" : "manhtt-079/vipubmed-deberta-xsmall",
     "hnbert": "demdecuong/vihealthbert-base-word"
 }
 
