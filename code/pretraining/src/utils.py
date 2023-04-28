@@ -2,19 +2,21 @@ import logging
 
 from transformers import (
     AutoTokenizer,
-    RobertaConfig
+    RobertaConfig,
+    AutoModel
 )
 
 from model import ViHnBERT
 
 MODEL_CLASSES = {
-    "phobert": (RobertaConfig, ViHnBERT, AutoTokenizer),
-    "hnbert": (RobertaConfig, ViHnBERT, AutoTokenizer)
+    #"phobert": (RobertaConfig, ViHnBERT, AutoTokenizer),
+    #"hnbert": (RobertaConfig, ViHnBERT, AutoTokenizer),
+    "model":(AutoTokenizer, AutoModel)
 }
 
 MODEL_PATH_MAP = {
-    "phobert" : "manhtt-079/vipubmed-deberta-xsmall",
-    "hnbert": "demdecuong/vihealthbert-base-word"
+    "model" : "manhtt-079/vipubmed-deberta-xsmall",
+    #"hnbert": "demdecuong/vihealthbert-base-word"
 }
 
 def init_logger():
