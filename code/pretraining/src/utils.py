@@ -9,14 +9,13 @@ from transformers import (
 from model import ViHnBERT
 
 MODEL_CLASSES = {
-    #"phobert": (RobertaConfig, ViHnBERT, AutoTokenizer),
-    #"hnbert": (RobertaConfig, ViHnBERT, AutoTokenizer),
-    "model":(AutoTokenizer, AutoModel)
+    "phobert": (RobertaConfig, ViHnBERT, AutoTokenizer),
+    "hnbert": (RobertaConfig, ViHnBERT, AutoTokenizer)
 }
 
 MODEL_PATH_MAP = {
-    "model" : "manhtt-079/vipubmed-deberta-xsmall",
-    #"hnbert": "demdecuong/vihealthbert-base-word"
+    "phobert" : "vinai/phobert-base",
+    "hnbert": "demdecuong/vihealthbert-base-word"
 }
 
 def init_logger():
